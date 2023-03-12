@@ -234,7 +234,7 @@ for filename in wav_files:
     w.close()
     # read data
 
-hps = utils.get_hparams_from_file("./configs/ys.json")
+hps = utils.get_hparams_from_file("./ys/ys.json")
 net_g = SynthesizerTrn(
     len(symbols),
     hps.data.filter_length // 2 + 1,
